@@ -1,0 +1,62 @@
+@import "./../../../styles/variables/colors";
+@import "./../../../styles/mixins/scroll";
+
+.wrapper {
+    display: flex;
+    border: 1px solid $color-black;
+    border-radius: 5px;
+    position: relative;
+
+    input {
+        padding: 5px 10px;
+        width: 100%;
+        min-height: 40px;
+        display: block;
+
+        border: none;
+        border-right: 1px solid $color-light-gray;
+        border-radius: 5px 0px 0px 5px;
+    
+        color: $color-gray;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+
+
+.button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 5px 5px 0px;
+
+    svg {
+        margin-left: 10px;
+    }
+}
+
+.optionsList {
+    width: 100%;
+    max-height: 250px;
+    overflow: auto;
+    @include scroll;
+
+    display: block;
+    background-color: white;
+    
+    border: 1px solid $color-light-gray;
+    border-radius: 5px;
+
+    position: absolute;
+    left: 0;
+    top: 110%;
+    z-index: 10;
+
+    li {
+        button {
+            width: 100%;
+            text-align-last: left;
+        }
+    }
+}

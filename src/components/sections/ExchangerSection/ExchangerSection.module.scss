@@ -1,0 +1,23 @@
+@import "./../../../styles/variables/colors";
+
+.wrapper {
+    padding: 20px;
+}
+
+.block {
+
+    &:last-child {
+        margin-top: 40px;
+    }
+
+    p {
+        color: $color-main;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+.tabsWrapper {
+    margin: 15px 0;
+}

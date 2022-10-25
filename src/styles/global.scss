@@ -1,0 +1,13 @@
+@import "./common/normalize";
+@import "./common/reset";
+@import "./common/container";
+
+@import "./variables/colors";
+@import "./mixins/scroll";
+
+body {
+    font-family: sans-serif;
+    @include scroll;
+    margin-right: calc(-1 * (100vw - 100%));
+    overflow-x: hidden;
+}
